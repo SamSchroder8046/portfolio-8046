@@ -1,0 +1,26 @@
+{
+  "finance_calculator": {
+    "deployed_link": "https://samschroder123.github.io/finance-calculator/",
+    "repo_link": "https://github.com/SamSchroder123/finance-calculator",
+    "image_name": "finance-calculator-image.png",
+    "github_username": "SamSchroder123",
+    "description": "A calculator that helps the user perform financial calculations.",
+    "usage": "Follow the link to the deployed site"
+  },
+  "team_profile_generator": {
+    "deployed_link": null,
+    "repo_link": "https://github.com/SamSchroder123/Team-Profile-Generator",
+    "image_name": "team-profile-generator-image.png",
+    "github_username": "SamSchroder123",
+    "description": "A cli programme which generates a team summary page.",
+    "usage": "After cloning the repository, make sure you have node.js installed and run 'npm i', then run 'node index.js'"
+  },
+  "README_maker": {
+    "deployed_link": null,
+    "repo_link": "https://github.com/SamSchroder123/README-maker",
+    "image_name": null,
+    "github_username": "SamSchroder123",
+    "description": "A cli programme which generates a README file.",
+    "usage": "After cloning the repository, make sure you have node.js installed and run 'npm i', then run 'node index.js'"
+  }
+}
