@@ -10,13 +10,15 @@ While under developement, you can still view the site via. the steps below.
 2. Clone repository into 'UniServerZ/www/' directory.
 
 ```bash
-cd <desired-directory>
+cd [desired-directory]
 git clone https://github.com/SamSchroder8046/portfolio-8046.git
 ```
 
+3. Visit 'localhost/[path-to-project-directory]/index.php' in your browser.
+
 ## Usage
 
-Alternatively visit the deployed site [here]() (WIP)
+Alternatively, visit the deployed site [here]() (WIP)
 
 ## Contributing
 
