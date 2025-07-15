@@ -62,7 +62,7 @@ function generateNavLinks () {
 }
 
 function generateProjectCards ($filePath) {
-    $projectsHtml = "";
+    $projectsHtml = '<div class="d-flex justify-content-center align-items-center"><div class="projects-grid">';
     $rowHtml = "";
     $row = "";
     $card = "";
@@ -100,21 +100,23 @@ function generateProjectCards ($filePath) {
                 </div>
             </div>
         CARD;
-        $projectsInRow = 3;
-        if (floor($count / $projectsInRow) == $count / $projectsInRow && $count / $projectsInRow != 0) {
-            $rowHtml = <<<ROW
-                '<div class="project-row">{$row}</div><br/>'
-            ROW;
-            $projectsHtml .= $rowHtml;
-            $row = "";
-        }
-        $row .= $card;
-        $count ++;
+        $projectsHtml .= $card;
+        // $projectsInRow = 3;
+        // if (floor($count / $projectsInRow) == $count / $projectsInRow && $count / $projectsInRow != 0) {
+        //     $rowHtml = <<<ROW
+        //         '<div class="project-row">{$row}</div><br/>'
+        //     ROW;
+        //     $projectsHtml .= $rowHtml;
+        //     $row = "";
+        // }
+        // $row .= $card;
+        // $count ++;
     }
     $rowHtml = <<<ROW
         '<div class="project-row">{$row}</div><br/>'
     ROW;
-    $projectsHtml .= $rowHtml;
+    // $projectsHtml .= $rowHtml;
+    $projectsHtml .= "</div></div>";
     return $projectsHtml;
 }
 ?>
