@@ -82,7 +82,7 @@ function generateProjectCards ($filePath) {
             $display = "display: none;";
         }
         $card = <<<CARD
-            <div class="card project-card bg-light" style="width: 18rem;">
+            <div class="card project-card bg-white" style="width: 18rem;">
                 <div class="w-100 h-100">
                     <img src="{$imgSrc}" class="card-img-top w-100 h-100" alt="...">
                 </div>
@@ -90,7 +90,7 @@ function generateProjectCards ($filePath) {
                     <h5 class="card-title">{$title}</h5>
                     <p class="card-text">{$data->description}</p>
                 </div>
-                <div class="card-body d-flex flex-row justify-content-around align-items-end bg-light rounded">
+                <div class="card-body d-flex flex-row justify-content-around align-items-end bg-white rounded">
                     <a href="{$data->deployed_link}" class="card-link" style="{$display}">Deployed Site</a>
                     <a href="{$data->repo_link}" class="card-link">Project Repository</a>
                 </div>

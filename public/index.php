@@ -3,6 +3,7 @@ include '../includes/header.php';
 include '../includes/footer.php';
 
 $bodyContent = <<<BODY
+  <h1 class="text-center mt-4 text-primary-emphasis">Home</h1>
   <div class="body-container d-flex flex-column justify-content-center align-items-center">
     <div class="w-80 m-4 bg-white rounded border border-1 d-flex flex-lg-row flex-sm-column justify-content-around align-items-center">
       <img class="img-fluid img-thumbnail rounded-circle m-2 w-25" src="../public/assets/images/headshot2.JPEG" alt="headshot of the portfolio owner, Sam T. Schroder">

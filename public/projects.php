@@ -14,8 +14,9 @@ $htmlContent = <<<HTML
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
   </head>
-  <body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column min-vh-100 bg-body-tertiary">
     {$headerContent}
+    <h1 class="text-center mt-4 text-primary-emphasis">Projects</h1>
     {$bodyContent}
     {$footerContent}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
