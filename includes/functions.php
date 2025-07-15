@@ -82,7 +82,7 @@ function generateProjectCards ($filePath) {
             $display = "display: none;";
         }
         $card = <<<CARD
-            <div class="card project-card bg-info-subtle" style="width: 18rem;">
+            <div class="card project-card bg-light" style="width: 18rem;">
                 <div class="w-100 h-100">
                     <img src="{$imgSrc}" class="card-img-top w-100 h-100" alt="...">
                 </div>
