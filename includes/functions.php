@@ -46,14 +46,14 @@ function generateNavLinks () {
     foreach ($pagesArr as $page) {
         if ($page->href != "index.php") {
             $navLinksContent .= <<<PAGE
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{$page->href}">{$page->title}</a>
+                <li class="nav-item ms-lg-auto mx-sm-auto bg-info-subtle rounded w-50">
+                    <a class="nav-link active mx-3" aria-current="page" href="{$page->href}">{$page->title}</a>
                 </li>
             PAGE;
         } else {
             $navLinksContent .= <<<PAGE
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{$page->href}">Home</a>
+                <li class="nav-item ms-lg-auto mx-sm-auto bg-info-subtle rounded w-50">
+                    <a class="nav-link active mx-3" aria-current="page" href="{$page->href}">Home</a>
                 </li>
             PAGE;
         }
@@ -82,7 +82,7 @@ function generateProjectCards ($filePath) {
             $display = "display: none;";
         }
         $card = <<<CARD
-            <div class="card" style="width: 18rem;">
+            <div class="card project-card bg-white" style="width: 18rem;">
                 <div class="w-100 h-100">
                     <img src="{$imgSrc}" class="card-img-top w-100 h-100" alt="...">
                 </div>
@@ -90,7 +90,7 @@ function generateProjectCards ($filePath) {
                     <h5 class="card-title">{$title}</h5>
                     <p class="card-text">{$data->description}</p>
                 </div>
-                <div class="card-body d-flex flex-row justify-content-around align-items-end">
+                <div class="card-body d-flex flex-row justify-content-around align-items-end bg-white rounded">
                     <a href="{$data->deployed_link}" class="card-link" style="{$display}">Deployed Site</a>
                     <a href="{$data->repo_link}" class="card-link">Project Repository</a>
                 </div>
@@ -99,46 +99,18 @@ function generateProjectCards ($filePath) {
         $projectsInRow = 3;
         if (floor($count / $projectsInRow) == $count / $projectsInRow && $count / $projectsInRow != 0) {
             $rowHtml = <<<ROW
-                '<div class="d-flex flex-row justify-content-around">{$row}</div><br/>'
+                '<div class="project-row">{$row}</div><br/>'
             ROW;
             $projectsHtml .= $rowHtml;
             $row = "";
-        } else {
-            $row .= $card;
         }
+        $row .= $card;
         $count ++;
     }
-    if (empty($projectsHtml)) {
-        $rowHtml = <<<ROW
-            '<div class="d-flex flex-row justify-content-around">{$row}</div><br/>'
-        ROW;
-        $projectsHtml .= $rowHtml;
-    }
+    $rowHtml = <<<ROW
+        '<div class="project-row">{$row}</div><br/>'
+    ROW;
+    $projectsHtml .= $rowHtml;
     return $projectsHtml;
 }
-
-// function getPagesContent (){
-//     $pages = array();
-//     $pagesContent = "";
-//     foreach (new DirectoryIterator("../public/") as $file) {
-//         if ($file->getExtension() === "php") {
-//             $nameEnd = strpos($file->getFilename(), ".");
-//             $pageName = substr($file->getFilename(), 0, $nameEnd);
-//             array_push($pages, $pageName);
-//         }
-//     }
-//     foreach ($pages as $page) {
-//         if ($page != "index") {
-//             $pageTitle = ucwords($page, "-");
-//             $pagesContent .= <<<PAGE
-//             <a class href="{$page}.php">{$pageTitle}</a>
-//             PAGE;
-//         } else {
-//             $pagesContent .= <<<PAGE
-//             <a class href="{$page}.php">Home</a>
-//             PAGE;
-//         }
-//     }
-//     return $pagesContent;
-// }
 ?>

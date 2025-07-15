@@ -18,7 +18,7 @@ git clone https://github.com/SamSchroder8046/portfolio-8046.git
 
 ## Usage
 
-Alternatively, visit the deployed site [here]() (WIP)
+Alternatively, visit the deployed site [here](https://portfolio-8046.free.nf/public/index.php) (WIP)
 
 ## Contributing
 
