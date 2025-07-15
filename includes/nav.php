@@ -2,7 +2,7 @@
 include('../includes/functions.php');
 $navLinks = generateNavLinks();
 $navContent = <<<NAV
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
                 <img src="../public/assets/images/favicon.png" width="40" height="40">
