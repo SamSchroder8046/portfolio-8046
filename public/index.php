@@ -3,9 +3,9 @@ include '../includes/header.php';
 include '../includes/footer.php';
 
 $bodyContent = <<<BODY
-  <div class="body-container d-flex flex-column justify-content-center align-items-center bg-body-tertiary">
-    <div class="w-80 m-2 bg-white rounded border border-1 d-flex flex-lg-row flex-sm-column justify-content-around align-items-center">
-      <img class="img-fluid img-thumbnail rounded-circle m-2 w-25 m-4" src="../public/assets/images/headshot2.JPEG" alt="headshot of the portfolio owner, Sam T. Schroder">
+  <div class="body-container d-flex flex-column justify-content-center align-items-center">
+    <div class="w-80 m-4 bg-white rounded border border-1 d-flex flex-lg-row flex-sm-column justify-content-around align-items-center">
+      <img class="img-fluid img-thumbnail rounded-circle m-2 w-25" src="../public/assets/images/headshot2.JPEG" alt="headshot of the portfolio owner, Sam T. Schroder">
       <div class="card w-50 m-4">
         <div class="card-header">
           Quote
@@ -37,7 +37,7 @@ $htmlContent = <<<HTML
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
   </head>
-  <body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column min-vh-100 bg-body-tertiary">
     {$headerContent}
     {$bodyContent}
     {$footerContent}
