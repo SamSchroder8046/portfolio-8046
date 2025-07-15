@@ -9,6 +9,10 @@
   margin: 20px;
 }
 
+.project-card:hover {
+  width: 33vw;
+}
+
 @media only screen and (max-width: 650px) {
   .project-row {
     display: flex;

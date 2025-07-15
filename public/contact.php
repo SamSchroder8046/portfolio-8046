@@ -3,7 +3,7 @@ include '../includes/header.php';
 include '../includes/footer.php';
 
 $bodyContent = <<<BODY
-    <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center bg-body-tertiary">
         <h1>Contact</h1>
         <p>As of September 2025, I am a 2nd year Software Engineering Student at LJMU.</p>
         <p>My interests are:</p>

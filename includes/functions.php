@@ -46,14 +46,14 @@ function generateNavLinks () {
     foreach ($pagesArr as $page) {
         if ($page->href != "index.php") {
             $navLinksContent .= <<<PAGE
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{$page->href}">{$page->title}</a>
+                <li class="nav-item ms-lg-auto mx-sm-auto bg-info-subtle rounded w-50">
+                    <a class="nav-link active mx-3" aria-current="page" href="{$page->href}">{$page->title}</a>
                 </li>
             PAGE;
         } else {
             $navLinksContent .= <<<PAGE
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{$page->href}">Home</a>
+                <li class="nav-item ms-lg-auto mx-sm-auto bg-info-subtle rounded w-50">
+                    <a class="nav-link active mx-3" aria-current="page" href="{$page->href}">Home</a>
                 </li>
             PAGE;
         }
@@ -82,7 +82,7 @@ function generateProjectCards ($filePath) {
             $display = "display: none;";
         }
         $card = <<<CARD
-            <div class="card project-card" style="width: 18rem;">
+            <div class="card project-card bg-info-subtle" style="width: 18rem;">
                 <div class="w-100 h-100">
                     <img src="{$imgSrc}" class="card-img-top w-100 h-100" alt="...">
                 </div>
@@ -90,7 +90,7 @@ function generateProjectCards ($filePath) {
                     <h5 class="card-title">{$title}</h5>
                     <p class="card-text">{$data->description}</p>
                 </div>
-                <div class="card-body d-flex flex-row justify-content-around align-items-end">
+                <div class="card-body d-flex flex-row justify-content-around align-items-end bg-light rounded">
                     <a href="{$data->deployed_link}" class="card-link" style="{$display}">Deployed Site</a>
                     <a href="{$data->repo_link}" class="card-link">Project Repository</a>
                 </div>

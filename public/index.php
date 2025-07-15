@@ -3,7 +3,7 @@ include '../includes/header.php';
 include '../includes/footer.php';
 
 $bodyContent = <<<BODY
-  <div class="body-container d-flex flex-column justify-content-center align-items-center">
+  <div class="body-container d-flex flex-column justify-content-center align-items-center bg-body-tertiary">
     <img class="img-fluid img-thumbnail rounded-circle mx-auto w-25 m-4" src="../public/assets/images/headshot2.JPEG" alt="headshot of the portfolio owner, Sam T. Schroder">
     <div>
       <p class="fs-2 m-4">Welcome to my portfolio site! <a href="projects.php">Click Here</a> to view any projects which I upload.</p>
