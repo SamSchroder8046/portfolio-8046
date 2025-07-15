@@ -14,10 +14,14 @@ $htmlContent = <<<HTML
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
   </head>
-  <body class="d-flex flex-column min-vh-100 bg-body-tertiary">
+  <body class="d-flex flex-column min-vh-100 bg-body-tertiary max-vw-100">
     {$headerContent}
-    <h1 class="text-center mt-4 text-primary-emphasis">Projects</h1>
-    {$bodyContent}
+    <div class="d-flex flex-column align-items-center">
+        <h1 class="text-center mt-4 text-primary-emphasis">Projects</h1>
+        <div class="w-75">
+        {$bodyContent}
+        </div>
+    </div>
     {$footerContent}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>

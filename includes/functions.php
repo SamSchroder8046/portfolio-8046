@@ -82,17 +82,21 @@ function generateProjectCards ($filePath) {
             $display = "display: none;";
         }
         $card = <<<CARD
-            <div class="card project-card bg-white" style="width: 18rem;">
+            <div class="card project-card bg-white p-2">
                 <div class="w-100 h-100">
-                    <img src="{$imgSrc}" class="card-img-top w-100 h-100" alt="...">
+                    <img src="{$imgSrc}" class="card-img-top w-100 border-bottom border-black" alt="image for {$project} project." style="height: 200px; object-fit: cover;">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">{$title}</h5>
                     <p class="card-text">{$data->description}</p>
                 </div>
-                <div class="card-body d-flex flex-row justify-content-around align-items-end bg-white rounded">
-                    <a href="{$data->deployed_link}" class="card-link" style="{$display}">Deployed Site</a>
-                    <a href="{$data->repo_link}" class="card-link">Project Repository</a>
+                <div class="project-links card-body d-flex flex-row justify-content-around align-items-center bg-white rounded w-100">
+                    <a href="{$data->deployed_link}" class="card-link h-75 m-2 border border-1 rounded p-2 bg-body-tertiary text-center" style="{$display} max-width: 150px;">Deployed Site</a>
+                    <a href="{$data->repo_link}" class="card-link h-75 m-2 border border-1 rounded p-2 bg-body-tertiary text-center" style="max-width: 150px;">Project Repository</a>
+                    <span class="d-flex flex-column justify-content-around align-items-center p-1 h-100 border-start border-1 ms-auto" style="max-width: 45px; min-width: 45px;">
+                        <p class="text-end w-100 h-100 ms-auto me-1" style="font-size: 10px;">GitHub:</p>
+                        <a class="card-link ms-auto" href="https://github.com/{$data->github_username}?tab=repositories}" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-0" style="width: 30px; height: auto;"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg></a>
+                    </span>
                 </div>
             </div>
         CARD;
