@@ -26,7 +26,7 @@ This is a personal project. No contribution is necessary. However, please see [c
 
 ## Contact
 
-Please contact Samuel T. Schroder via email for any enquiries.
+Please contact Samuel T. Schroder via email for any queries.
 
 email address: tkinternodequery@gmail.com
 

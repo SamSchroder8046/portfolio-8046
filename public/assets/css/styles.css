@@ -1,19 +1,62 @@
-.project-row {
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .project-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
+  margin-left: auto;
+  margin-right: auto;
+} */
 
 .project-card {
-  width: 30vw;
-  margin: 20px;
+  width: 350px;
+  max-width: 400px;
+  min-width: 350px;
+  margin: 10px;
 }
 
 .project-card:hover {
-  width: 33vw;
+  border: 1px black solid;
+  border-radius: 5px;
 }
 
-@media only screen and (max-width: 650px) {
+.projects-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* 4 cards on large screens */
+}
+
+/* Tablet - 3 cards per row */
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small tablet - 2 cards per row */
+@media (max-width: 1150px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - 1 card per row */
+@media (max-width: 770px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .project-row {
     display: flex;
     flex-direction: column;
@@ -22,5 +65,11 @@
   }
   .project-row > * {
     margin: 50px;
+  }
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 }

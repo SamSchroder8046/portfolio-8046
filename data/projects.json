@@ -22,5 +22,21 @@
     "github_username": "SamSchroder123",
     "description": "A cli programme which generates a README file.",
     "usage": "After cloning the repository, make sure you have node.js installed and run 'npm i', then run 'node index.js'"
+  },
+  "daily_planner": {
+    "deployed_link": "https://samschroder123.github.io/Daily-Planner/index.html",
+    "repo_link": "https://github.com/SamSchroder123/Daily-Planner",
+    "image_name": "daily-planner-image.png",
+    "github_username": "SamSchroder123",
+    "description": "A simple calendar app which helps the user plan their work day",
+    "usage": "Visit the deployed link"
+  },
+  "password_generator": {
+    "deployed_link": "https://samschroder123.github.io/Password-Generator/",
+    "repo_link": "https://github.com/SamSchroder123/Password-Generator",
+    "image_name": "password-generator-image.png",
+    "github_username": "SamSchroder123",
+    "description": "A simple app which generates a password for the user",
+    "usage": "Visit the deployed link"
   }
 }
