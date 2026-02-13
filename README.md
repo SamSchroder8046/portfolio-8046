@@ -4,7 +4,7 @@ Portfolio-8046 is a personal portfolio site where users can view personal projec
 
 ## Installation
 
-While under developement, you can still view the site via. the steps below.
+While under development, you can still view the site via. the steps below.
 
 1. Install [UniServerZ](https://sourceforge.net/projects/miniserver/).
 2. Clone repository into 'UniServerZ/www/' directory.
@@ -23,12 +23,6 @@ Alternatively, visit the deployed site [here](https://portfolio-8046.free.nf/pub
 ## Contributing
 
 This is a personal project. No contribution is necessary. However, please see [contact](#contact) to reach out.
-
-## Contact
-
-Please contact Samuel T. Schroder via email for any queries.
-
-email address: tkinternodequery@gmail.com
 
 ## License
 

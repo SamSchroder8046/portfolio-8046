@@ -7,21 +7,6 @@ $bodyContent = <<<BODY
   <div class="body-container d-flex flex-column justify-content-center align-items-center">
     <div class="w-80 m-4 bg-white rounded border border-1 d-flex flex-lg-row flex-sm-column justify-content-around align-items-center">
       <img class="img-fluid img-thumbnail rounded-circle m-2 w-25" src="../public/assets/images/headshot2.JPEG" alt="headshot of the portfolio owner, Sam T. Schroder">
-      <div class="card w-50 m-4">
-        <div class="card-header">
-          Quote
-        </div>
-        <div class="card-body">
-          <figure>
-            <blockquote class="blockquote">
-              <p>"The best way to make something happen is to start yesterday."</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              <cite title="Source Title">Samuel T. Schroder</cite>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
     </div>
     <p class="fs-2 m-4">Welcome to my portfolio site! <a href="projects.php">Click Here</a> to view any projects which I upload.</p>
   </div>
